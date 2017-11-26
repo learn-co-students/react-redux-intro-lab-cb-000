@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux'
+
+import InventoryList from './InventoryList'
+import NewInventoryItem from './NewInventoryItem'
 
 class App extends Component {
-   
   render() {
     return (
       <div className="App">
