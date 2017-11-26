@@ -1,4 +1,4 @@
-export function getInventoryItems() {
+export function getInventoryListItems() {
     const items =   [
                     {quantity: '3lbs', description: 'flour' },
                     {quantity: '2 dozen', description: 'eggs'},
@@ -10,9 +10,10 @@ export function getInventoryItems() {
     }
 }
 
-export function addInventoryListItem(addItem) {
+export function addInventoryListItem(quantity, description) {
+    const newItem = {quantity, description}
     return {
         type: 'ADD_INVENTORY_LIST_ITEM',
-        payload: addItem
+        payload: newItem
     }
 }
