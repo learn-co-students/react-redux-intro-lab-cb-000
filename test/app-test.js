@@ -25,10 +25,6 @@ function setup() {
 
 describe('<App/>', function () {
 
-  it('should render the InventoryList component as a child', function () {
-    const { wrapper } = setup()
-    expect(wrapper.shallow().find('InventoryList').length).toEqual(1)
-  });
 
   it('should render the NewInventoryItem component as a child', function () {
     const { wrapper } = setup()
@@ -40,18 +36,5 @@ describe('<App/>', function () {
     expect(wrapper.unrendered.type.displayName).toEqual('Connect(App)')
   })
 
- 
+
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
