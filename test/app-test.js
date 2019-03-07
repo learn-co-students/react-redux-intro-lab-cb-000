@@ -1,3 +1,4 @@
+
 import React from 'react'
 import { shallow, mount} from 'enzyme'
 import expect, { createSpy, spyOn, isSpy } from 'expect'
@@ -40,18 +41,5 @@ describe('<App/>', function () {
     expect(wrapper.unrendered.type.displayName).toEqual('Connect(App)')
   })
 
- 
+
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
