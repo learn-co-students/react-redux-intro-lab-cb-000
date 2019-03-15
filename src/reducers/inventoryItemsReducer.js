@@ -1,8 +1,10 @@
+import React, { Component } from 'react';
+
 function inventoryItemsReducer(state=[], action){
   switch(action.type) {
     case 'GET_INVENTORY_LIST_ITEMS':
       return(action.payload)
-    case 'ADD_INVENTORY_LIST_ITEMS':
+    case 'ADD_INVENTORY_LIST_ITEM':
       return(
         [...state, {
           description: action.payload.description,
@@ -13,4 +15,5 @@ function inventoryItemsReducer(state=[], action){
       return state
   }
 }
+
 export default inventoryItemsReducer
