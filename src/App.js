@@ -8,7 +8,7 @@ import {bindActionCreators} from 'redux';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.creaetItem = this.createItem.bind(this);
+    this.createtItem = this.createItem.bind(this);
   }
 
   createItem(quantity, description) {
